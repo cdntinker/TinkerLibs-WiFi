@@ -1,2 +1,2 @@
-# LibTesting-WiFiLibTesting-WiFi
+# LibTesting-WiFi
 Testing libraries for PlatformIO usage. (WiFi)
