@@ -28,7 +28,7 @@ void setup_wifi() //   We start by connecting to a WiFi network
             dotcount++;
             delay(500);
             DEBUG_ProgressBar1();
-            if (dotcount >= 46)
+            if (dotcount >= 63)
             {
                 DEBUG_ProgressBar2(dotcount);
                 dotcount = 0;
