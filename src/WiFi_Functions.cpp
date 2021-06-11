@@ -21,21 +21,25 @@ void setup_wifi() //   We start by connecting to a WiFi network
     sprintf(DEBUGtxt, "Connecting to: %-22s", ssid);
     DEBUG_SectionTitle(DEBUGtxt);
     {
-        DEBUG_ProgressBar0();
+        // DEBUG_ProgressBar0();
         int dotcount = 0;
         while (WiFi.status() != WL_CONNECTED) // Give it a bit of time to establish the WiFi connection...
         {
-            dotcount++;
             delay(500);
-            DEBUG_ProgressBar1();
-            if (dotcount >= 62)
-            {
-                DEBUG_ProgressBar2(dotcount);
-                dotcount = 0;
-                DEBUG_ProgressBar0();
-            }
-            // SSD1306_Static("  no WiFi  ", 3);
+dotcount = DEBUG_ProgressBar(dotcount);
         }
+        // {
+        //     dotcount++;
+        //     delay(500);
+        //     DEBUG_ProgressBar1();
+        //     if (dotcount >= 62)
+        //     {
+        //         DEBUG_ProgressBar2(dotcount);
+        //         dotcount = 0;
+        //         DEBUG_ProgressBar0();
+        //     }
+        //     // SSD1306_Static("  no WiFi  ", 3);
+        // }
         DEBUG_ProgressBar2(dotcount);
     } // while (WiFi.status() != WL_CONNECTED)
 
