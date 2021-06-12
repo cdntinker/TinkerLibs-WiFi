@@ -4,7 +4,7 @@
 // Stuff only needed in WiFi_functions.cpp goes here.
 
 // #include <NOTARDUINO.h>
-#include <Arduino.h>
+// #include <Arduino.h>
 
 #if defined(ESP8266)
     #include "ESP8266WiFi.h"
