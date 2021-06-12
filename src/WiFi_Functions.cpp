@@ -1,5 +1,3 @@
-// #include <Arduino.h>
-
 #include <Tinker_DEBUG.h>
 #include "Tinker_WiFi.h"
 
