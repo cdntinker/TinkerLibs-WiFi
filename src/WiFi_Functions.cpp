@@ -61,6 +61,7 @@ void WiFi_Test() // Is Good...  Maybe
     }
     else
     {
+        Serial.println(WiFi OK);
         if (blip[1] == 255)
             blip[1] = 0;
         else

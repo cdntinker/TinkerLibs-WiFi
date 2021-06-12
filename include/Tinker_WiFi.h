@@ -29,3 +29,4 @@ void setup_WiFi();
 
 int WiFi_strength();
 
+void WiFi_Test();
