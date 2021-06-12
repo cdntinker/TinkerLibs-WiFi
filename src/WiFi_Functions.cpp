@@ -51,27 +51,27 @@ int WiFi_strength()
     return (WiFi.RSSI());
 }
 
-int blip[3] = {000, 255, 000}; // GRN
+// int blip[3] = {000, 255, 000}; // GRN
 
 bool WiFi_Test() // Is Good...  Maybe
 {
     if (WiFi.status() != WL_CONNECTED)
     {
         DEBUG_Trouble("Lost WiFi!");
-        blip[0] = 128;
-        blip[1] = 128;
+        // blip[0] = 128;
+        // blip[1] = 128;
         return false;
     }
     else
     {
         DEBUG_Success("Have WiFi!");
-        if (blip[1] == 255)
-            blip[1] = 0;
-        else
-            blip[1] = 255;
+        // if (blip[1] == 255)
+        //     blip[1] = 0;
+        // else
+        //     blip[1] = 255;
         return true;
     }
-#ifdef d_Pixels
-    SetAPixel(3, blip);
-#endif // d_Pixels
+    // #ifdef d_Pixels
+    //     SetAPixel(3, blip);
+    // #endif // d_Pixels
 }
