@@ -57,14 +57,14 @@ bool WiFi_Test() // Is Good...  Maybe
 {
     if (WiFi.status() != WL_CONNECTED)
     {
-        Serial.println("Oh Poop!");
+        DEBUG_Trouble("Lost WiFi!");
         blip[0] = 128;
         blip[1] = 128;
         return false;
     }
     else
     {
-        Serial.println("WiFi OK");
+        DEBUG_Success("Have WiFi!");
         if (blip[1] == 255)
             blip[1] = 0;
         else
