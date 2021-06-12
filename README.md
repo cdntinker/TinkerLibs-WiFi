@@ -56,6 +56,15 @@ Anybody wanna work this out for me?
 These are all declared in **Tinker_WiFi.h**
 
 ### `void setup_WiFi()`
+Connects to a WiFi network.
+
+SSID, Password & preferred Hostname must be set up before calling.
+
+```
+const char *host;
+const char *ssid;
+const char *password;
+```
 
 ### `int WiFi_strength()`
 Returns the signal strength of your WiFi connection in dBm.
