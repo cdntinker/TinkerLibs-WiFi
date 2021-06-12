@@ -60,7 +60,7 @@ bool WiFi_Test() // Is Good...  Maybe
         Serial.println("Oh Poop!");
         blip[0] = 128;
         blip[1] = 128;
-        return FALSE;
+        return false;
     }
     else
     {
@@ -69,7 +69,7 @@ bool WiFi_Test() // Is Good...  Maybe
             blip[1] = 0;
         else
             blip[1] = 255;
-        return TRUE;
+        return true;
     }
 #ifdef d_Pixels
     SetAPixel(3, blip);
