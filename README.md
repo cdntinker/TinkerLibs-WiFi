@@ -53,13 +53,13 @@ Anybody wanna work this out for me?
 
 ## The Functions
 
-These are all declared in **Tinker_DEBUG.h**
+These are all declared in **Tinker_WiFi.h**
 
 ### `void setup_WiFi()`
 
 ### `int WiFi_strength()`
 Returns the signal strength of your WiFi connection in dBm.
 
-### `void WiFi_Test()`
+### `bool WiFi_Test()`
 
 ## An Example

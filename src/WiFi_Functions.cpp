@@ -1,3 +1,5 @@
+#include <Arduino.h>
+
 #include <Tinker_DEBUG.h>
 #include "Tinker_WiFi.h"
 
@@ -51,13 +53,14 @@ int WiFi_strength()
 
 int blip[3] = {000, 255, 000}; // GRN
 
-void WiFi_Test() // Is Good...  Maybe
+bool WiFi_Test() // Is Good...  Maybe
 {
     if (WiFi.status() != WL_CONNECTED)
     {
         Serial.println("Oh Poop!");
         blip[0] = 128;
         blip[1] = 128;
+        return FALSE;
     }
     else
     {
@@ -66,6 +69,7 @@ void WiFi_Test() // Is Good...  Maybe
             blip[1] = 0;
         else
             blip[1] = 255;
+        return TRUE;
     }
 #ifdef d_Pixels
     SetAPixel(3, blip);
