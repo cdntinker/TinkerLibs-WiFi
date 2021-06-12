@@ -1,4 +1,4 @@
-#include <Arduino.h>
+// #include <Arduino.h>
 
 #include <Tinker_DEBUG.h>
 #include "Tinker_WiFi.h"
@@ -51,27 +51,16 @@ int WiFi_strength()
     return (WiFi.RSSI());
 }
 
-// int blip[3] = {000, 255, 000}; // GRN
-
 bool WiFi_Test() // Is Good...  Maybe
 {
     if (WiFi.status() != WL_CONNECTED)
     {
-        DEBUG_Trouble("Lost WiFi!");
-        // blip[0] = 128;
-        // blip[1] = 128;
+        // DEBUG_Trouble("Lost WiFi!");
         return false;
     }
     else
     {
-        DEBUG_Success("Have WiFi!");
-        // if (blip[1] == 255)
-        //     blip[1] = 0;
-        // else
-        //     blip[1] = 255;
+        // DEBUG_Success("Have WiFi!");
         return true;
     }
-    // #ifdef d_Pixels
-    //     SetAPixel(3, blip);
-    // #endif // d_Pixels
 }
