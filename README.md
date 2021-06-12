@@ -17,5 +17,5 @@ Or is it _really_ that annoying how __similar yet not quite__ WiFi handling on t
 
 * WiFi
     * https://github.com/arduino-libraries/WiFi
-
-
+* AsyncTCP
+    * https://github.com/me-no-dev/AsyncTCP
