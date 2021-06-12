@@ -58,6 +58,7 @@ These are all declared in **Tinker_DEBUG.h**
 ### `void setup_WiFi()`
 
 ### `void WiFi_strength()`
+Returns the signal strength of your WiFi connection in dBm.
 
 ### `void WiFi_Test()`
 
