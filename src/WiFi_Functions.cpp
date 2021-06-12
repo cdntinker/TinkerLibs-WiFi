@@ -2,13 +2,14 @@
 #include "Tinker_WiFi.h"
 
 // #include "TopSecret.h"
+
 extern const char* host;
 extern const char *ssid;
 extern const char *password;
 
 extern char DEBUGtxt[48];
 
-void setup_wifi() //   We start by connecting to a WiFi network
+void setup_WiFi() //   We start by connecting to a WiFi network
 {
   WiFi.hostname(host);
 

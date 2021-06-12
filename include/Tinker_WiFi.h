@@ -1,3 +1,8 @@
+#ifndef Tinker_WiFi_H
+#define Tinker_WiFi_H
+
+// Stuff only needed in WiFi_functions.cpp goes here.
+
 #include <NOTARDUINO.h>
 
 #if defined(ESP8266)
@@ -15,6 +20,11 @@
 String ip3string(IPAddress ip);
 String processor(const String &var);
 
-void setup_wifi();
+#endif // Tinker_WiFi_H
+
+// Function declarations
+
+void setup_WiFi();
+
 int WiFi_strength();
 
