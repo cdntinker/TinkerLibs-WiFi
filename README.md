@@ -11,11 +11,11 @@ Or is it _really_ that annoying how __similar yet not quite__ WiFi handling on t
 ### ESP8266
 
 * ESP8266WiFi
-** https://github.com/esp8266/Arduino/tree/master/libraries/ESP8266WiFi
+    * https://github.com/esp8266/Arduino/tree/master/libraries/ESP8266WiFi
 
 ### ESP32
 
 * WiFi
-** https://github.com/arduino-libraries/WiFi
+    * https://github.com/arduino-libraries/WiFi
 
 
