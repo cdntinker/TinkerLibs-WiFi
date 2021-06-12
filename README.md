@@ -61,5 +61,8 @@ These are all declared in **Tinker_WiFi.h**
 Returns the signal strength of your WiFi connection in dBm.
 
 ### `bool WiFi_Test()`
+Returns a TRUE/FALSE result wether we still have WiFi.
+
+(8266 seems to recover if the AP comes back online, 32 doesn't.  weird...)
 
 ## An Example
