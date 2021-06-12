@@ -75,3 +75,4 @@ Returns a TRUE/FALSE result wether we still have WiFi.
 (8266 seems to recover if the AP comes back online, 32 doesn't.  weird...)
 
 ## An Example
+Sorry...  Not yet.
