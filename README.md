@@ -19,6 +19,8 @@ Or is it _really_ that annoying how __similar yet not quite__ WiFi handling on t
 ## Oddities to be sorted
 For some bizarre reason, if you comment out the call to `setup_HTTP()`, rebuild & upload the firmware, the device still connects happily to WiFi...
 
+This does not happen if you erase the flash first...
+
 WTF???
 
 ## Required Libraries:
