@@ -1,6 +1,7 @@
 # LibTesting-WiFi
 
 - [Overview](#overview)
+- [Oddities](#oddities-to-be-sorted)
 - [Required Libraries](#required-libraries)
 - Usage:
   - [With PlatformIO](#platformio)
@@ -14,6 +15,11 @@ Tools & wrappers to ease WiFi setup & use on both ESP8266 __AND__ ESP32 devices.
 Is it just me?
 
 Or is it _really_ that annoying how __similar yet not quite__ WiFi handling on these 2 MCUs are?
+
+## Oddities to be sorted
+For some bizarre reason, if you comment out the call to `setup_HTTP()`, rebuild & upload the firmware, the device still connects happily to WiFi...
+
+WTF???
 
 ## Required Libraries:
 
