@@ -4,9 +4,9 @@
 // Stuff only needed in WiFi_functions.cpp goes here.
 
 #if defined(ESP8266)
-    #include "ESP8266WiFi.h"
+    #include <ESP8266WiFi.h>
 #elif defined(ESP32)
-    #include "WiFi.h"
+    #include <WiFi.h>
 #endif
 
 String ip3string(IPAddress ip);
