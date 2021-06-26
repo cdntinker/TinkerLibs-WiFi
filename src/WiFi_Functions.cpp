@@ -24,7 +24,7 @@ void setup_WiFi() //   We start by connecting to a WiFi network
         while (WiFi.status() != WL_CONNECTED) // Give it a bit of time to establish the WiFi connection...
         {
             delay(500);
-            dotcount = DEBUG_ProgressBar(dotcount);
+            dotcount = DEBUG_ProgressBar(dotcount, '.');
         } // while (WiFi.status() != WL_CONNECTED)
         DEBUG_ProgressBar2(dotcount);
     }
