@@ -1,4 +1,4 @@
-# LibTesting-WiFi
+# TinkerLibs-WiFi
 
 - [Overview](#overview)
 - [Oddities](#oddities-to-be-sorted)
@@ -25,7 +25,7 @@ WTF???
 
 ## Required Libraries:
 
-This library uses [my DEBUG library](https://github.com/cdntinker/TinkerLibs-DEBUGhttps://github.com/cdntinker/TinkerLibs-DEBUG).
+This library uses [my DEBUG library](https://github.com/cdntinker/TinkerLibs-DEBUG).
 
 ### ESP8266
 
